@@ -23,7 +23,12 @@ public class PrimeFactorsTest {
     }
 
     @Test
-    public void primeFactorsOfTwoIsTwo() throws Exception {
+    public void primeFactorsOfTwoIsTwo() {
         assertThat(underTest.calculate(2), is(Arrays.asList(2)));
+    }
+
+    @Test
+    public void primeFactorsOfThreeIsThree() {
+        assertThat(underTest.calculate(3), is(Arrays.asList(3)));
     }
 }
