@@ -46,4 +46,9 @@ public class PrimeFactorsTest {
     public void primeFactorsOfSixAreThreeAndTwo() {
         assertThat(underTest.calculate(6), is(Arrays.asList(2, 3)));
     }
+
+    @Test
+    public void primeFactorsOfFourteenAreTwoAndSeven() throws Exception {
+        assertThat(underTest.calculate(14), is(Arrays.asList(2, 7)));
+    }
 }
