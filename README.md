@@ -1,4 +1,4 @@
-# Prime Factors Kata
+# Prime Factors Kata [![CircleCI](https://circleci.com/gh/luiscarlin/prime-factors-kata.svg?style=svg)](https://circleci.com/gh/luiscarlin/prime-factors-kata)
 
 ## Run
 
