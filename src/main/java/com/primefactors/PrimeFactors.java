@@ -7,15 +7,11 @@ public class PrimeFactors {
     public List<Integer> calculate(int input) {
         List<Integer> primes = new ArrayList<>();
 
-        while (input % 2 == 0) {
-            primes.add(2);
-            input /= 2;
+        for (int factor = 2; input > 1; factor++) {
+            for (; input % factor == 0; input /= factor) {
+                primes.add(factor);
+            }
         }
-
-        if (input > 1) {
-            primes.add(input);
-        }
-
         return primes;
     }
 }
