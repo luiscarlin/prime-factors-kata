@@ -36,4 +36,9 @@ public class PrimeFactorsTest {
     public void primeFactorsOfFourAreTwoTimesTwo() {
         assertThat(underTest.calculate(4), is(Arrays.asList(2, 2)));
     }
+
+    @Test
+    public void primeFactorsOfFiveIsFive() {
+        assertThat(underTest.calculate(5), is(Arrays.asList(5)));
+    }
 }
